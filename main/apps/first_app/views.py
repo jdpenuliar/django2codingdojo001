@@ -5,9 +5,9 @@ from django.shortcuts import render, HttpResponse, redirect
 from django.views.decorators.csrf import csrf_exempt
 
 import json
-
+# NOTE: put all views as a class
 # Create your views here.
-@csrf_exempt
+# @csrf_exempt
 def index(request):
     print('haha----\n', request)
     print(request.method)
